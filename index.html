@@ -7,6 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="toss-container">
+        <label for="toss-input">Enter 'heads' or 'tails':</label>
+        <input type="text" id="user-input" name="toss-choice" placeholder="e.g., heads"><br>
+        <button id="toss-button">Toss Coin</button>
+        <p id="toss-result"></p>
+        <div id="bat-or-bowl-selection" style="display: none;">
+            <label for="bat-or-bowl">Choose to bat or bowl:</label>
+            <select id="bat-or-bowl">
+                <option value="bat">Bat</option>
+                <option value="bowl">Bowl</option>
+            </select>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
