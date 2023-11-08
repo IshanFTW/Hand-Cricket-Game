@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hand Cricket Game</title>
 </head>
@@ -20,7 +20,27 @@
         <p id="toss-decision"></p>
     </div>
     <div id="game-container">
+        <div id="user-inning" style="display: none;">
+            <h2>Your Inning</h2>
+            <p>Select a shot (1 to 6):</p>
+            <button class="shot-button" data-value="1">1</button>
+            <button class="shot-button" data-value="2">2</button>
+            <button class="shot-button" data-value="3">3</button>
+            <button class="shot-button" data-value="4">4</button>
+            <button class="shot-button" data-value="5">5</button>
+            <button class="shot-button" data-value="6">6</button>
+            <p>Your Score: <span id="user-score">0</span></p>
+        </div>
+        <div id="computer-inning" style="display: none;">
+            <h2>Computer's Inning</h2>
+            <p>Computer is batting...</p>
+            <p>Computer Score: <span id="computer-score">0</span></p>
+        </div>
 
+        <div id="result" style="display: none;">
+            <h2>Match Result</h2>
+            <p id="match-result"></p>
+        </div>
     </div>
 
     <script src="script.js"></script>
